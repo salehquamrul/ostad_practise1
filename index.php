@@ -1,11 +1,28 @@
 <?php
 
-$tuitionFee = 100000;
 
-$commission = ($tuitionFee >= 20000) ? ($tuitionFee * .25) : (($tuitionFee >= 10000 && $tuitionFee < 20000) ? ($tuitionFee * .20) : (($tuitionFee >= 7000 && $tuitionFee < 10000) ? ($tuitionFee * .15) : ("Invalid Data.")));
+// First Homework.
+function isEven($n) {
+    if ($n % 2 == 0) {
+        return true;
+    }
+    return false;
+}
 
-echo "\n";
+$x = 15;
 
-$commission = ($tuitionFee<7000)?("invalid data"):(($tuitionFee>=7000 && $tuitionFee<10000)?($tuitionFee*.15):(($tuitionFee>=10000 && $tuitionFee<20000 )?($tuitionFee * .20):(($tuitionFee>=20000)?($tuitionFee*.25):())));
+if (isEven($x)){
+    echo "{$x} is an even number";
+}else {
+    echo "{$x} is an odd number";   
+}
 
-echo "The commission is {$commission}.";
+// Second Homework.
+
+$sum = 0;
+
+for($i = 1; $i <= 100; $i++){
+    $sum += $i;
+}
+
+echo "The sum of the series 1+2+3...100 is: $sum";
