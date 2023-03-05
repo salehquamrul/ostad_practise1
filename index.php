@@ -45,15 +45,6 @@ $person->setEmail("johndoe@example.com");
 echo "Name: " . $person->getName() . "<br>";
 echo "Email: " . $person->getEmail() . "<br>";
 
-
-// Task 3: Superglobal Variables in PHP
-
-// Check if the form has been submitted
-if ($_SERVER['REQUEST_METHOD'] === 'POST') {
-  // Retrieve the name and email from the form data
-  $name = $_POST['name'];
-  $email = $_POST['email'];
-
   // Create a new instance of the Person class
   $person = new Person();
 
@@ -65,6 +56,15 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
   echo "Name: " . $person->getName() . "<br>";
   echo "Email: " . $person->getEmail() . "<br>";
 }
+
+
+// Task 3: Superglobal Variables in PHP
+
+// Check if the form has been submitted
+if ($_SERVER['REQUEST_METHOD'] === 'POST') {
+  // Retrieve the name and email from the form data
+  $name = $_POST['name'];
+  $email = $_POST['email'];
 
 
 ?>
